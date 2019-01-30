@@ -4,7 +4,7 @@ frameworkVersion: ">=1.2.0 <2.0.0"
 
 provider:
   name: aws
-  runtime: python3.5
+  runtime: python3.6
   region: us-west-1
   stage: prod
 
