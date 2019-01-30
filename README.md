@@ -1,3 +1,3 @@
-_WIP!_
+_WIP_
 # reddelete
 Serverless Framework function that periodically deletes a user's reddit comments below a defined threshold!
