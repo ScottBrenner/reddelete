@@ -4,7 +4,7 @@ frameworkVersion: ">=1.2.0 <2.0.0"
 
 provider:
   name: aws
-  runtime: python3.7
+  runtime: python3.5
   region: us-west-1
   stage: prod
 
@@ -13,7 +13,7 @@ functions:
     handler: handler.run
     events:
       # Invoke Lambda function periodically
-      - schedule: rate(6 hours)
+      - schedule: rate(1 minutes)
     environment:
       REDDIT_CLIENT_ID: ${ssm:RD_REDDIT_CLIENT_ID~true}
       REDDIT_CLIENT_SECRET: ${ssm:RD_REDDIT_CLIENT_SECRET~true}
