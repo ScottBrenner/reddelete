@@ -1,0 +1,10 @@
+{
+    "name": "reddelete",
+    "version": "1.0.0",
+    "description": "Serverless Framework function that periodically deletes a user's reddit comments below a defined threshold",
+    "author": "Scott Brenner",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "serverless-python-requirements": "^4.2.5"
+    }
+}

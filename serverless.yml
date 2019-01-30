@@ -1,0 +1,30 @@
+service: reddelete
+
+frameworkVersion: ">=1.2.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: python3.7
+  region: us-west-1
+  stage: prod
+  profile: default
+
+functions:
+  reddelete:
+    handler: handler.run
+    events:
+      # Invoke Lambda function periodically
+      - schedule: rate(6 hours)
+    environment:
+      REDDIT_CLIENT_ID: ${ssm:RD_REDDIT_CLIENT_ID~true}
+      REDDIT_CLIENT_SECRET: ${ssm:RD_REDDIT_CLIENT_SECRET~true}
+      REDDIT_USERNAME: ${ssm:RD_REDDIT_USERNAME~true}
+      REDDIT_PASSWORD: ${ssm:RD_REDDIT_PASSWORD~true}
+      DELETE_THRESHOLD: 0
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
