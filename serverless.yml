@@ -13,7 +13,7 @@ functions:
     handler: handler.run
     events:
       # Invoke Lambda function periodically
-      - schedule: rate(1 minutes)
+      - schedule: rate(1 minute)
     environment:
       REDDIT_CLIENT_ID: ${ssm:RD_REDDIT_CLIENT_ID~true}
       REDDIT_CLIENT_SECRET: ${ssm:RD_REDDIT_CLIENT_SECRET~true}
