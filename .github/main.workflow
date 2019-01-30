@@ -4,7 +4,7 @@ workflow "Serverless deploy" {
 }
 
 action "serverless deploy" {
-  uses = "ScottBrenner/github-action@patch-3"
+  uses = "serverless/github-action@master"
   secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
   args = "deploy"
 }
