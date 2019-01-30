@@ -7,7 +7,6 @@ provider:
   runtime: python3.7
   region: us-west-1
   stage: prod
-  profile: default
 
 functions:
   reddelete:
