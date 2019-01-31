@@ -14,3 +14,6 @@ Serverless Framework function that periodically deletes a user's Reddit comments
     _Suggested and default method for seting these values: [Reference Variables using the SSM Parameter Store](https://serverless.com/framework/docs/providers/aws/guide/variables/#reference-variables-using-the-ssm-parameter-store)_
 4. `serverless deploy`
 5. Done!
+
+---
+_This function is based on [AWS Python Scheduled Cron Example](https://github.com/serverless/examples/tree/master/aws-python-scheduled-cron)_
