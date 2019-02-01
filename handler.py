@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 def run(event, context):
-  reddit = praw.Reddit(user_agent='reddelete (by /u/scottstimo)',
+  reddit = praw.Reddit(user_agent='reddelete',
     client_id=os.environ['REDDIT_CLIENT_ID'],
     client_secret=os.environ['REDDIT_CLIENT_SECRET'],
     username=os.environ['REDDIT_USERNAME'],

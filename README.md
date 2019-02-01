@@ -9,9 +9,9 @@ Serverless Framework function that periodically deletes a user's Reddit comments
     * `REDDIT_CLIENT_SECRET`: from Reddit app created above
     * `REDDIT_USERNAME`: Reddit username
     * `REDDIT_PASSWORD`: Reddit password
-    * `DELETE_THRESHOLD`: Comments with score below this are deleted
+    * `DELETE_THRESHOLD`: Comments with score below this are deleted _(default is 0)_
     
-    _Suggested and default method for seting these values: [Reference Variables using the SSM Parameter Store](https://serverless.com/framework/docs/providers/aws/guide/variables/#reference-variables-using-the-ssm-parameter-store)_
+    _Suggested method for seting these values: [Reference Variables using the SSM Parameter Store](https://serverless.com/framework/docs/providers/aws/guide/variables/#reference-variables-using-the-ssm-parameter-store)_
 4. `serverless deploy`
 5. Done!
 
