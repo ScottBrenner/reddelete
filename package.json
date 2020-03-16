@@ -5,6 +5,6 @@
     "author": "Scott Brenner",
     "license": "GPL-3.0",
     "dependencies": {
-        "serverless-python-requirements": "^5.0.1"
+        "serverless-python-requirements": "^5.1.0"
     }
 }
