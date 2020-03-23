@@ -1,3 +1,5 @@
 .serverless
 *.pyc
 *.pyo
+
+node_modules/
