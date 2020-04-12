@@ -5,6 +5,7 @@
     "author": "Scott Brenner",
     "license": "GPL-3.0",
     "dependencies": {
+        "serverless-plugin-cloudwatch-dashboard": "^1.2.0",
         "serverless-python-requirements": "^5.1.0"
     }
 }
